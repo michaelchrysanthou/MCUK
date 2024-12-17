@@ -1,0 +1,29 @@
+.title{
+
+    text-align: center;
+    font-size: 60px;
+}
+
+body{
+
+    font-family: 'syne mono';
+   
+}
+
+.nav-item {
+    margin-right: 15px;
+  }
+.nav {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 420px;
+    list-style: none;
+    font-size: 30px;
+  
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: black;
+  }
