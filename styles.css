@@ -5,51 +5,137 @@
     box-sizing: border-box;
   }
   
-  /* Navbar Styling */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header and Navbar */
+  .header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+  }
+  
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: white;
   }
   
-  /* Logo */
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    margin: auto;
+    
   }
   
-  /* Navigation Links */
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
   }
   
-  .nav-links a {
-    text-decoration: none;
+  .nav-links li a {
     color: white;
-    font-size: 1rem;
+    text-decoration: none;
     transition: color 0.3s ease;
   }
   
-  .nav-links a:hover {
-    color: #00bcd4; /* Highlight color */
+  .nav-links li a:hover {
+    color: #000000;
+  }
+  
+  /* Responsive Navbar */
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide links by default */
+      flex-direction: column;
+      gap: 10px;
+      background-color: #444;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show links when menu is toggled */
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+  /* Main Content */
+  .container {
+    padding: 20px;
+  }
+  
+/* Main Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    gap: 20px;
+  }
+  
+  /* First Row Sections */
+  .row-1 {
+    grid-row: 1; /* Assigns all row-1 sections to the first row */
+  }
+  
+  /* Second Row Sections */
+  .row-2 {
+    grid-row: 2; /* Assigns all row-2 sections to the second row */
+  }
+  
+  /* Subsequent Sections Start New Rows */
+  section:not(.row-1):not(.row-2) {
+    grid-column: span 4; /* Span all columns, starting a new row */
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .nav-links {
-      flex-direction: column;
-      gap: 1rem;
-      display: none; /* Initially hidden */
+    .grid {
+      grid-template-columns: 1fr; /* Stack sections in a single column */
     }
   
-    .navbar.active .nav-links {
-      display: flex;
+    section {
+      grid-column: span 1; /* Each section takes one column in mobile view */
     }
+  }
+  
+
+  /* Image Styling */
+section img {
+
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  section iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Ensures proper video aspect ratio */
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
   }
   
