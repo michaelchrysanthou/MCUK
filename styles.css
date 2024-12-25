@@ -152,7 +152,7 @@ section h3 {
   .footer {
     text-align: center;
     padding: 20px;
-    background-color: #fffefe;
-    color: white;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
   }
   
