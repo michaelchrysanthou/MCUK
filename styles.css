@@ -77,24 +77,24 @@
 
 
   .bio-section {
-    margin: 20px auto;
+    margin: 156px auto;
     text-align: center;
 }
 
 .bio-textbox {
 
-    width: 80%; /* Adjust width as needed */
-    height: 150px; /* Adjust height as needed */
+    width: 50%; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
     margin: 20px auto; /* Center horizontally and add top/bottom margins */
     padding: 10px;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-family: Biryani;
     font-weight: bolder;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     resize: vertical; /* Allow resizing vertically only */
     display: block; /* Ensure it behaves as a block element */
-    color: #000;
+    color: #ffffff;
     
 }
 
@@ -174,16 +174,15 @@ section h3 {
     font-weight: bold; /* Make the title bold */
   }
 
-  .img{
-
-    size: 100px;
-  }
-    
   /* Footer */
   .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
     padding: 20px;
     background-color: #000000;
     color: rgb(0, 0, 0);
-    position: relative;
+  
   }
