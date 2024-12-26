@@ -160,8 +160,10 @@ section img {
   }
 
   section iframe {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
+    padding-left: 100px;
+    padding-top: 50px;
     aspect-ratio: 16 / 9; /* Ensures proper video aspect ratio */
   }
 
@@ -172,6 +174,21 @@ section h3 {
     margin-bottom: auto;
     text-align: center; /* Center-align the title */
     font-weight: bold; /* Make the title bold */
+  }
+
+  section h4 {
+    font-size: 0.9rem; /* Adjust the font size */
+    color: #000000; /* Choose a color for the title */
+    margin-bottom: auto;
+    text-align: center; /* Center-align the title */
+    font-weight: bold; /* Make the title bold */
+    padding-top: 20px;
+  }
+
+  .audio{
+
+    margin-left: 156px;
+    
   }
 
   /* Footer */
