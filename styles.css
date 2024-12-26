@@ -25,8 +25,6 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    
-    
   }
   
   .nav-links {
@@ -77,13 +75,42 @@
     }
   }
 
-  .prod{
 
+  .bio-section {
+    margin: 20px auto;
     text-align: center;
-    padding: 100px;
-  
+}
+
+.bio-textbox {
+
+    width: 80%; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    margin: 20px auto; /* Center horizontally and add top/bottom margins */
+    padding: 10px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    resize: vertical; /* Allow resizing vertically only */
+    display: block; /* Ensure it behaves as a block element */
+    color: #000;
+    
+}
+
+.bio-textbox:focus {
+    outline: none;
+    border-color: #000; /* Highlight border when focused */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+  .center-heading {
+    text-align: center;
+    margin: 20px 0;
+
   }
-  
+
   /* Main Content */
   .container {
     padding: 20px;
@@ -105,11 +132,11 @@
   .row-2 {
     grid-row: 2; /* Assigns all row-2 sections to the second row */
   }
-  
-  /* Subsequent Sections Start New Rows */
-  section:not(.row-1):not(.row-2) {
-    grid-column: span 4; /* Span all columns, starting a new row */
-  }
+
+    /* Third Row Sections */
+    .row-3 {
+        grid-row: 3; /* Assigns all row-3 sections to the thirdrow */
+      }
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -141,18 +168,22 @@ section img {
   /* Section Title Styling */
 section h3 {
     font-size: 0.9rem; /* Adjust the font size */
-    color: #333; /* Choose a color for the title */
+    color: #000000; /* Choose a color for the title */
     margin-bottom: auto;
     text-align: center; /* Center-align the title */
     font-weight: bold; /* Make the title bold */
   }
-  
-  
+
+  .img{
+
+    size: 100px;
+  }
+    
   /* Footer */
   .footer {
     text-align: center;
     padding: 20px;
     background-color: #000000;
     color: rgb(0, 0, 0);
+    position: relative;
   }
-  
