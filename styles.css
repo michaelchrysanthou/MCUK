@@ -4,10 +4,14 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
+
+  /* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
   
   /* Header and Navbar */
   .header {
@@ -76,6 +80,59 @@
   }
 
 
+
+
+
+
+/* Container for the grid */
+.grid-container {
+  display: grid;
+  gap: 10px; /* Space between grid items */
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+}
+
+/* Individual grid items */
+.grid-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures images are clipped to the border radius */
+  text-align: center; /* Centers the image if it's smaller than the container */
+}
+
+/* Images */
+.grid-item img {
+  width: 100%; /* Ensures images scale to fit the container */
+  height: 300px; /* Sets a maximum height for the image */
+  object-fit: cover; /* Ensures the image fills the area while maintaining aspect ratio */
+  display: block; /* Removes unwanted spacing under the image */
+  border-radius: 5px; /* Optional: Matches container border-radius */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 item per row for small devices */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
   .bio-section {
     margin: 156px auto;
     text-align: center;
@@ -103,101 +160,6 @@
     border-color: #000; /* Highlight border when focused */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
-
-  .center-heading {
-    text-align: center;
-    margin: 20px 0;
-
-  }
-
-  /* Main Content */
-  .container {
-    padding: 20px;
-  }
-  
-/* Main Grid Layout */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
-    gap: 20px;
-  }
-  
-  /* First Row Sections */
-  .row-1 {
-    grid-row: 1; /* Assigns all row-1 sections to the first row */
-  }
-  
-  /* Second Row Sections */
-  .row-2 {
-    grid-row: 2; /* Assigns all row-2 sections to the second row */
-  }
-
-    /* Third Row Sections */
-    .row-3 {
-        grid-row: 3; /* Assigns all row-3 sections to the thirdrow */
-      }
-
-    /* Third Row Sections */
-    .row-4 {
-        grid-row: 4; /* Assigns all row-3 sections to the thirdrow */
-      }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .grid {
-      grid-template-columns: 1fr; /* Stack sections in a single column */
-    }
-  
-    section {
-      grid-column: span 1; /* Each section takes one column in mobile view */
-    }
-  }
-  
-
-  /* Image Styling */
-section img {
-
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
-   /* iframe Styling */
-  section iframe {
-    width: 91%;
-    height: 80%;
-    padding-left: 50px;
-    padding-top: 45px;
-    aspect-ratio: 16 / 9; /* Ensures proper video aspect ratio */
-  }
-
-  /* Section Title Styling */
-section h3 {
-    font-size: 0.9rem; /* Adjust the font size */
-    color: #000000; /* Choose a color for the title */
-    margin-bottom: auto;
-    text-align: center; /* Center-align the title */
-    font-weight: bold; /* Make the title bold */
-  }
-
-  section h4 {
-    font-size: 0.9rem; /* Adjust the font size */
-    color: #000000; /* Choose a color for the title */
-    margin-bottom: auto;
-    text-align: center; /* Center-align the title */
-    font-weight: bold; /* Make the title bold */
-    padding-top: 10px;
-  }
-
-  .audio{
-
-    margin-top: 10px;
-    margin-left: 150px;
-    margin-bottom: 30px;
-    
-  }
 
   /* Footer */
   .footer {
