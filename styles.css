@@ -80,7 +80,12 @@ body, html {
   }
 
 
+.headings{
 
+  font-family: biryani;
+  font-weight: bolder;
+  font-size: small;
+}
 
 
 
@@ -94,9 +99,9 @@ body, html {
 
 /* Individual grid items */
 .grid-item {
-  background-color: #f9f9f9;
+  background-color: #f9f9f900;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0);
   overflow: hidden; /* Ensures images are clipped to the border radius */
   text-align: center; /* Centers the image if it's smaller than the container */
 }
@@ -140,9 +145,9 @@ body, html {
 
 .bio-textbox {
 
-    width: 50%; /* Adjust width as needed */
-    height: 120px; /* Adjust height as needed */
-    margin: 20px auto; /* Center horizontally and add top/bottom margins */
+    width: 40%; /* Adjust width as needed */
+    height: 220px; /* Adjust height as needed */
+    margin: 10px auto; /* Center horizontally and add top/bottom margins */
     padding: 10px;
     font-size: 0.8rem;
     font-family: Biryani;
@@ -172,4 +177,14 @@ body, html {
     background-color: #000000;
     color: rgb(0, 0, 0);
   
+  }
+
+
+
+
+  .iframe{
+
+    padding-top: 50px;
+    padding-right: 25px;
+   
   }
