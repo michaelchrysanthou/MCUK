@@ -33,7 +33,6 @@ Fully optimized for desktop, tablet, and mobile devices.
 
 Frontend:
 HTML5, CSS3, JavaScript
-
 Content hosted on AWS S3 with a custom domain using Route 53.
 Deployment:
 Served via AWS CloudFront for secure and fast global delivery.
