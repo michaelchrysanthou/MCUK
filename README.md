@@ -28,7 +28,7 @@ Welcome to my website! This site showcases my music, along with unique AI-genera
 
 **How to Use:**
 
-1. Navigate the Website:
+1. Navigate the Website (www.mcukmusic.net):
     * Use the responsive navbar to explore the sections of the site.
     * Access the "PRODUCTION, COMPOSITIONS AND DJ" section's to find embedded YouTube videos and Spotify links.
 
