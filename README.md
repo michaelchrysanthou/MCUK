@@ -44,8 +44,8 @@ Welcome to my website! This site showcases my music, along with unique AI-genera
 * Expanding media integration to include live performance clips and interviews.
 * Introducing a newsletter subscription for updates on new releases and events.
 
-**Acknowledgments
-**
+**Acknowledgments**
+
 * Special thanks to OpenAI for their AI tools that enabled the creation of the artwork.
 * Gratitude to my listeners and supporters for inspiring this journey.
 
