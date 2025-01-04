@@ -24,6 +24,9 @@ Welcome to my website! This site showcases my music, along with unique AI-genera
 * CSS3: Responsible for the responsive and visually appealing design.
 * JavaScript: Enhances interactivity, including dynamic navbar functionality.
 * YouTube and Spotify Embeds: Integrates media content seamlessly.
+* AWS Route 53: Used for domain management.
+* AWS S3: Utilized for static file storage.
+* AWS Amplify: Deployed the app for fast and scalable hosting.
 * OpenAI Tools: Used for generating the stunning artwork featured on the site.
 
 **How to Use:**
