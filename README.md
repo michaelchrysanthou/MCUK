@@ -1,8 +1,8 @@
-MCUK MUSIC WEBSITE
+# **MCUK MUSIC WEBSITE**
 
 Welcome to my website! This site showcases my music, along with unique AI-generated artwork that complements my sound and vision. Designed with a responsive layout, the website provides an engaging experience on both mobile and desktop devices.
 
-Features
+**Features**
 
 1. Responsive Design
 
@@ -18,7 +18,7 @@ Features
 
 * All the artwork featured on the website was created using OpenAI tools, reflecting the same innovative energy as my music.
 
-Technology Stack
+**Technology Stack**
 
 * HTML5: Provides the structure for the website.
 * CSS3: Responsible for the responsive and visually appealing design.
@@ -26,11 +26,11 @@ Technology Stack
 * YouTube and Spotify Embeds: Integrates media content seamlessly.
 * OpenAI Tools: Used for generating the stunning artwork featured on the site.
 
-How to Use:
+**How to Use:**
 
 1. Navigate the Website:
     * Use the responsive navbar to explore the sections of the site.
-    * Access the "Music" section to find embedded YouTube videos and Spotify links.
+    * Access the "PRODUCTION, COMPOSITIONS AND DJ" section's to find embedded YouTube videos and Spotify links.
 
 2. Enjoy the Content:
     * Play the YouTube videos directly on the site.
@@ -39,13 +39,13 @@ How to Use:
 3. Appreciate the Artwork:
     * Visit the "Gallery" section to view the AI-generated visuals that complement my music.
 
-Future Enhancements
+**Future Enhancements**
 
 * Expanding media integration to include live performance clips and interviews.
 * Introducing a newsletter subscription for updates on new releases and events.
 
-Acknowledgments
-
+**Acknowledgments
+**
 * Special thanks to OpenAI for their AI tools that enabled the creation of the artwork.
 * Gratitude to my listeners and supporters for inspiring this journey.
 
