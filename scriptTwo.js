@@ -7,9 +7,7 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 
   document.addEventListener("DOMContentLoaded", () => {
     const lines = [
-      "Welcome!",
-      "Explore Our Work.",
-      "Experience the Story."
+      "Please email mchrysanthou33@gmail.com for more information!"
     ];
 
     const container = document.querySelector(".auto-type-container");
@@ -43,8 +41,3 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 
     typeLine();
   });
-
-
-
-
-

@@ -218,4 +218,19 @@ body, html {
     border: 0;
   }
   
+  .auto-type-container {
+    font-family: 'Biriyani', monospace;
+    font-size: 1.5rem;
+    color: white;
+    white-space: pre-wrap;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .auto-type-line {
+    margin: 0;
+    display: block;
+  }
+  
+  
   
