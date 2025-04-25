@@ -5,12 +5,24 @@
     box-sizing: border-box;
   }
 
+  body {
+    background-repeat: no-repeat;
+    background-position:5%;
+    background-attachment: fixed; /* Optional: stays still on scroll */
+    color: #fff; /* If your image is dark */
+  }
+  
+  
+
   /* Reset some default styles */
 body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  color: #000;
+  
+  
 }
   
   /* Header and Navbar */
@@ -88,32 +100,83 @@ body, html {
   padding-bottom: 20px;
 }
 
+.hero-section {
+  background-image: url("images/13.jpeg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-family: 'Biryani', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-family: 'Biryani', sans-serif;
+  font-size: 1rem;
+  color: #000000;
+}
 
 
-/* Container for the grid */
 .grid-container {
   display: grid;
-  gap: 10px; /* Space between grid items */
-  padding: 10px;
-  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
-/* Individual grid items */
+
 .grid-item {
-  background-color: #f9f9f900;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0);
-  overflow: hidden; /* Ensures images are clipped to the border radius */
-  text-align: center; /* Centers the image if it's smaller than the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* ensures uniform height */
+  margin: 0;
+  padding: 0;
 }
 
-/* Images */
+
+.grid-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
 .grid-item img {
-  width: 100%; /* Ensures images scale to fit the container */
-  height: 300px; /* Sets a maximum height for the image */
-  object-fit: cover; /* Ensures the image fills the area while maintaining aspect ratio */
-  display: block; /* Removes unwanted spacing under the image */
-  border-radius: 5px; /* Optional: Matches container border-radius */
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  
 }
 
 /* Responsive adjustments */
@@ -129,44 +192,6 @@ body, html {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-  .bio-section {
-    margin: 156px auto;
-    text-align: center;
-}
-
-.bio-textbox {
-
-    width: 40%; /* Adjust width as needed */
-    height: 220px; /* Adjust height as needed */
-    margin: 10px auto; /* Center horizontally and add top/bottom margins */
-    padding: 10px;
-    font-size: 0.8rem;
-    font-family: Biryani;
-    font-weight: bolder;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    resize: vertical; /* Allow resizing vertically only */
-    display: block; /* Ensure it behaves as a block element */
-    color: #ffffff;
-    
-}
-
-.bio-textbox:focus {
-    outline: none;
-    border-color: #000; /* Highlight border when focused */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
   /* Footer */
   .footer {
     position: fixed;
@@ -174,17 +199,23 @@ body, html {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 15px;
     background-color: #000000;
     color: rgb(0, 0, 0);
   
   }
 
-
-
-  .iframe{
-
-    padding-top: 50px;
-    padding-right: 25px;
-   
+  .iframe-thumbnail {
+    width: 100%;
+    height: 371px;
+    overflow: hidden;
+    position: relative;
   }
+  
+  .iframe-thumbnail iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+  }
+  
+  
