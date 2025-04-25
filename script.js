@@ -1,13 +1,19 @@
-document.getElementById("menu-toggle").addEventListener("click", function () {
-    const navLinks = document.getElementById("nav-links");
-    navLinks.classList.toggle("active");
-  });
-  
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
 
+  if (toggleButton && navLinks) {
+    toggleButton.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  } else {
+    console.error("menu-toggle or nav-links not found in the DOM");
+  }
+});
 
   document.addEventListener("DOMContentLoaded", () => {
     const lines = [
-      "Welcome!",
+      "WELCOME!",
       "Explore Our Work.",
       "Experience the Story."
     ];

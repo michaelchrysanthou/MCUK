@@ -1,10 +1,16 @@
-document.getElementById("menu-toggle").addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
-    navLinks.classList.toggle("active");
+  
+    if (toggleButton && navLinks) {
+      toggleButton.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    } else {
+      console.error("menu-toggle or nav-links not found in the DOM");
+    }
   });
   
-
-
   document.addEventListener("DOMContentLoaded", () => {
     const lines = [
       "Please email mchrysanthou33@gmail.com for more information!"
